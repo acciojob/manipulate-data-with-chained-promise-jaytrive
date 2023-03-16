@@ -11,7 +11,7 @@ function promise1(){
 
 function promise2(arr){
 	return new Promise((resolve,reject) => {
-		let oddarr=arr.filter((res) => res%2!=0)
+		let oddarr=arr.filter((res) => res%2==0)
 		setTimeout(() => {
 			resolve(oddarr)
 		},1000)
